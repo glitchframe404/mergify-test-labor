@@ -1,5 +1,5 @@
 pull_request_rules:
-  - name: test with comment and label
+  - name: labeling rule
     conditions:
       - base == main
     actions:
@@ -7,4 +7,4 @@ pull_request_rules:
         add:
           - security-test
       comment:
-        message: "Mergify hat diesen PR erfolgreich verarbeitet!"
+        message: "Mergify hat diesen Pull Request erkannt."
