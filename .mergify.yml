@@ -1,8 +1,10 @@
 pull_request_rules:
-  - name: universal label test
+  - name: test with comment and label
     conditions:
       - base == main
     actions:
       label:
         add:
           - security-test
+      comment:
+        message: "Mergify hat diesen PR erfolgreich verarbeitet!"
