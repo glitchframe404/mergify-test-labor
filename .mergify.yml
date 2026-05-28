@@ -1,7 +1,7 @@
 pull_request_rules:
-  - name: force label
+  - name: test author condition
     conditions:
-      - base == main
+      - author=glitchframe404
     actions:
       label:
         add:
