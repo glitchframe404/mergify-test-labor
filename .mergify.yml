@@ -1,7 +1,7 @@
 pull_request_rules:
-  - name: test label injection
+  - name: force label
     conditions:
-      - author == "some-other-tester"
+      - base == main
     actions:
       label:
         add:
